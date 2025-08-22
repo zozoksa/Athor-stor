@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>authors web</title>
   <style>
-    body {
+body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-image: url("https://c1.wallpaperflare.com/preview/127/366/443/library-book-bookshelf-read.jpg");
@@ -226,6 +226,64 @@
       font-weight: bold;
       cursor: pointer;
     }
+
+    /* Books Section */
+    .books-section {
+      background-color: rgba(255, 236, 210, 0.95);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .books-section h2 {
+      color: #5a2d02;
+      margin-bottom: 30px;
+    }
+
+    .books-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .book-card {
+      background: #fff3e0;
+      padding: 20px;
+      border-radius: 15px;
+      width: 200px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    .book-card button {
+      padding: 8px 15px;
+      background-color: #5a2d02;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .book-card button:hover {
+      background-color: #7a3a00;
+    }
+
+    .cart-count {
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+      margin-left: 5px;
+    }
   </style>
 </head>
 <body>
@@ -300,6 +358,30 @@
       <img src="https://static.srpcdigital.com/styles/1037xauto/public/2023-10/387256.jpeg.webp" alt="الكاتب">
       <p>المؤلف: طه حسين</p>
       <a class="buttons" href="author7.html">Click here</a>
+    </div>
+  </div>
+
+  <div class="books-section">
+    <h2>📚 الكتب المعروضة للبيع</h2>
+    <div class="books-container">
+      <div class="book-card">
+        <img src="book1.jpg" alt="كتاب">
+        <h3>كتاب البداية</h3>
+        <p>السعر: 100 جنيه</p>
+        <button onclick="addToCart()">إضافة للسلة</button>
+      </div>
+      <div class="book-card">
+        <img src="book2.jpg" alt="كتاب">
+        <h3>كتاب الحكمة</h3>
+        <p>السعر: 150 جنيه</p>
+        <button onclick="addToCart()">إضافة للسلة</button>
+      </div>
+      <div class="book-card">
+        <img src="book3.jpg" alt="كتاب">
+        <h3>كتاب الإبداع</h3>
+        <p>السعر: 200 جنيه</p>
+        <button onclick="addToCart()">إضافة للسلة</button>
+      </div>
     </div>
   </div>
 
